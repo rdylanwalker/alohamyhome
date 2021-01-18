@@ -1,13 +1,19 @@
 <form (click)="stopPropagation($event)">
   <mat-form-field>
     <mat-label>Username</mat-label>
-    <input type="text" aria-label="username" matInput>
+    <input
+      type="text"
+      aria-label="username"
+      autocomplete="username"
+      matInput
+    >
   </mat-form-field>
   <mat-form-field>
     <mat-label>Password</mat-label>
     <input
       [type]="passwordVisible ? 'text' : 'password'"
       aria-label="password"
+      autocomplete="current-password"
       matInput
     >
     <button
