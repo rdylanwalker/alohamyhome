@@ -1,0 +1,18 @@
+form {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+.sign-in-buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.login-button {
+  margin-right: 8px;
+}

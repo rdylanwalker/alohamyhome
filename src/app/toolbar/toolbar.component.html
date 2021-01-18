@@ -1,0 +1,53 @@
+<mat-toolbar color="primary" class="toolbar">
+  <span>
+    <button
+      mat-button
+      mat-icon-button
+      *ngIf="mobileQuery.matches"
+      (click)="toggleSidenav.emit()"
+    >
+      <mat-icon>menu</mat-icon>
+    </button>
+    Aloha My Home
+  </span>
+  <div *ngIf="!mobileQuery.matches">
+    <button
+      mat-button
+      *ngFor="let navButton of navButtons; index as i"
+      [color]="activeNavButton === i && 'accent'"
+      (click)="onNavButtonClick(i)"
+      [matMenuTriggerFor]="toolbarMenu"
+    >
+      {{navButton.buttonText}}
+      <mat-icon *ngIf="activeNavButton === i">keyboard_arrow_up</mat-icon>
+      <mat-icon *ngIf="activeNavButton !== i">keyboard_arrow_down</mat-icon>
+    </button>
+  </div>
+  <div>
+    <button
+      mat-button
+      mat-icon-button
+      matTooltip="Mortgage Calculator"
+    >
+      <mat-icon>calculate</mat-icon>
+    </button>
+    <button
+      mat-flat-button
+      [matMenuTriggerFor]="signInMenu"
+    >
+      Sign In
+      <mat-icon>keyboard_arrow_down</mat-icon>
+    </button>
+  </div>
+</mat-toolbar>
+<mat-menu
+  #toolbarMenu="matMenu"
+  (closed)="onCenterButtonMenuClose()"
+>
+ <app-center-button-dropdown></app-center-button-dropdown>
+</mat-menu>
+<mat-menu
+  #signInMenu="matMenu"
+>
+  <app-sign-in-menu></app-sign-in-menu>
+</mat-menu>

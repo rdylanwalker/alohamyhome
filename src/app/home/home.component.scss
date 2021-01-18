@@ -1,0 +1,59 @@
+@import '../../custom-theme.scss';
+
+.main-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.headline {
+  text-align: center;
+  padding: 0 8px;
+}
+
+.site-mantra {
+  margin-top: 32px;
+  font-weight: bolder;
+  color: mat-color($mat-blue, 600);
+}
+
+.main-info-cards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main-quick-compare-content {
+  position: relative;
+  height: 400px;
+  width: 100%;
+  &:before {
+    content: "";
+    position: absolute;
+    top: -100px;
+    bottom: -100px;
+    left: 0;
+    right: 0;
+    transform: skewY(-3deg);
+    border-top-style: solid;
+    border-top-width: 4px;
+    border-top-color: mat-color($alohamyhome-primary);
+    background-color: yellowgreen;
+  }
+}
+
+.quick-compare {
+  position: relative;
+  padding: 80px;
+}
+
+.site-links {
+  z-index: 1;
+  height: 300px;
+  background-color: mat-color($mat-grey, 50);
+  width: 100%;
+}
