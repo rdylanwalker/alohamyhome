@@ -1,4 +1,4 @@
-@import '../custom-theme.scss';
+@import '../variables.scss';
 
 .content {
   display: flex;
@@ -17,6 +17,6 @@ mat-sidenav-content {
   width: 100%;
 }
 .active-link {
-  color: mat-color($alohamyhome-accent) !important;
+  color: $primary !important;
 }
 

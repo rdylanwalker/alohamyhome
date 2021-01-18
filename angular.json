@@ -25,6 +25,7 @@
             ],
             "styles": [
               "src/custom-theme.scss",
+              "src/variables.scss",
               "src/styles.css"
             ],
             "scripts": []
@@ -117,6 +118,10 @@
               "devServerTarget": "alohamyhome:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
     }

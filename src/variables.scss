@@ -1,0 +1,9 @@
+@import '~@angular/material/theming';
+
+$alohamyhome-primary: mat-palette($mat-teal);
+$alohamyhome-accent: mat-palette($mat-deep-purple, 500);
+$alohamyhome-warn: mat-palette($mat-red);
+
+$primary: mat-color($alohamyhome-primary);
+$accent: mat-color($alohamyhome-accent);
+$warn: mat-color($alohamyhome-warn);
