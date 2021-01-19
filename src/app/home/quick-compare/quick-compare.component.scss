@@ -4,15 +4,16 @@ $compare-red: #B10000;
 
 .quick-compare {
   position: relative;
-  padding: 80px;
+  padding: 40px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   flex-wrap: wrap;
 }
 
 .compare-card {
   width: 300px;
+  min-height: 460px;
   margin: 32px;
   border-radius: 16px;
   background-color: white;
