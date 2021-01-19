@@ -10,8 +10,10 @@ import { AngularMaterialModule } from './angular-material.module';
 import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './app-routing.module';
 import { CenterButtonDropdownComponent } from './toolbar/center-button-dropdown/center-button-dropdown.component';
-import { SignInMenuComponent } from './toolbar/sign-in-menu/sign-in-menu.component';
+import { SignInComponent } from './sign-in/sign-in.component';
 import { InfoCardComponent } from './home/info-card/info-card.component';
+import { QuickCompareComponent } from './home/quick-compare/quick-compare.component';
+import { QuickLinksComponent } from './home/quick-links/quick-links.component';
 
 @NgModule({
   declarations: [
@@ -21,8 +23,10 @@ import { InfoCardComponent } from './home/info-card/info-card.component';
     FooterComponent,
     HomeComponent,
     CenterButtonDropdownComponent,
-    SignInMenuComponent,
+    SignInComponent,
     InfoCardComponent,
+    QuickCompareComponent,
+    QuickLinksComponent,
   ],
   imports: [
     BrowserModule,

@@ -8,9 +8,11 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatInputModule} from '@angular/material/input';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
+import {MatDividerModule} from '@angular/material/divider';
 
 const angularMaterialModules = [
   MatButtonModule,
+  MatDividerModule,
   MatIconModule,
   MatInputModule,
   MatListModule,

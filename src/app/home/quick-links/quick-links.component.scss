@@ -1,0 +1,20 @@
+@import '../../../variables.scss';
+
+.quick-links {
+  display: flex;
+  margin: 24px;
+}
+
+.quick-link-section {
+  display: flex;
+  flex: 1;
+}
+
+.quick-link-content {
+  margin: 0 24px;
+}
+
+.quick-link {
+  text-decoration: none;
+  color: $accent;
+}

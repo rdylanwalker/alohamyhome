@@ -1,5 +1,5 @@
 <mat-toolbar color="primary" class="toolbar">
-  <span>
+  <span class="toolbar-section-1">
     <button
       mat-button
       mat-icon-button
@@ -8,7 +8,7 @@
     >
       <mat-icon>menu</mat-icon>
     </button>
-    Aloha My Home
+    <img src="assets/AMH_White.svg" alt="Aloha My Home" class="logo-title" />
   </span>
   <div *ngIf="!mobileQuery.matches">
     <button
@@ -32,13 +32,13 @@
     >
       <mat-icon>calculate</mat-icon>
     </button>
-    <button
+    <a
       mat-flat-button
-      [matMenuTriggerFor]="signInMenu"
+      class="sign-in-button"
+      routerLink="/signin"
     >
       Sign In
-      <mat-icon>keyboard_arrow_down</mat-icon>
-    </button>
+    </a>
   </div>
 </mat-toolbar>
 <mat-menu
@@ -46,9 +46,4 @@
   (closed)="onCenterButtonMenuClose()"
 >
  <app-center-button-dropdown></app-center-button-dropdown>
-</mat-menu>
-<mat-menu
-  #signInMenu="matMenu"
->
-  <app-sign-in-menu></app-sign-in-menu>
 </mat-menu>

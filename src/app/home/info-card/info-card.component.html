@@ -1,7 +1,7 @@
-<div class="info-card-background">
+<div class="info-card-background" [style.background-image]="'url(' + info.backgroundImagePath + ')'">
   <div class="info-card-content" [style.border-color]="info.borderColor">
     <strong class="mat-title">{{info.header}}</strong>
-    <div class="info-content">
+    <div class="info-content paragraph-text">
       <p
         *ngFor="let paragraph of info.content"
       >

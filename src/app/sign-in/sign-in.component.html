@@ -1,0 +1,37 @@
+<div class="sign-in-container">
+  <form (click)="stopPropagation($event)">
+    <mat-form-field>
+      <mat-label>Username</mat-label>
+      <input
+        type="text"
+        aria-label="username"
+        autocomplete="username"
+        matInput
+      >
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Password</mat-label>
+      <input
+        [type]="passwordVisible ? 'text' : 'password'"
+        aria-label="password"
+        autocomplete="current-password"
+        matInput
+      >
+      <button
+        mat-button
+        mat-icon-button
+        matSuffix
+        aria-label="toggle password visibility"
+        (click)="togglePasswordVisibility($event)"
+      >
+        <mat-icon *ngIf="passwordVisible">visibility</mat-icon>
+        <mat-icon *ngIf="!passwordVisible">visibility_off</mat-icon>
+      </button>
+    </mat-form-field>
+    <div class="sign-in-buttons">
+      <button mat-raised-button color="accent" class="login-button">Sign In</button>
+      <button mat-raised-button>Register</button>
+    </div>
+  </form>
+</div>
+

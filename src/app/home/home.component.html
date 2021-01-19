@@ -1,6 +1,6 @@
 <div class="main-content">
-  <strong class="mat-headline site-mantra headline">Take control of the home buying or selling process!</strong>
-  <p class="mat-subheading-2 headline">Aloha My Home makes the home buying and selling process a breeze.</p>
+  <strong class="mat-headline headline site-mantra">Take control of the home buying or selling process!</strong>
+  <p class="mat-subheading-1 headline site-sub-mantra">Aloha My Home makes the home buying and selling process a breeze.</p>
   <div class="main-info-cards">
     <app-info-card
       *ngFor="let cardInfo of info"
@@ -8,18 +8,10 @@
     >
     </app-info-card>
   </div>
-  <div class="main-quick-compare-content">
-    <div class="quick-compare">
-      TODO Quick Compare Cards
-      <a
-        mat-button
-        color="primary"
-      >
-        DETAILED COMPARISON
-      </a>
-    </div>
+  <div class="quick-compare-content">
+    <app-quick-compare></app-quick-compare>
   </div>
   <div class="site-links">
-    TODO Bottom Info
+    <app-quick-links></app-quick-links>
   </div>
 </div>

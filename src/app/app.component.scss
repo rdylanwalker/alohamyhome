@@ -16,6 +16,9 @@ mat-sidenav {
 mat-sidenav-content {
   width: 100%;
 }
+main {
+  height: 100%;
+}
 .active-link {
   color: $primary !important;
 }

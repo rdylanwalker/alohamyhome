@@ -1,22 +1,23 @@
+@import "../../../variables.scss";
+
 .info-card-background {
   margin: 16px;
-  padding: 48px 32px 200px 32px;
-  background-image: linear-gradient(blue, lightblue);
+  padding: 104px 48px 340px 48px;
   border-radius: 12px;
 }
 .info-card-content {
   background-color: white;
-  opacity: 0.7;
+  opacity: 0.82;
   border-radius: 12px;
   border-color: black;
   border-width: 3px;
   border-style: solid;
-  padding: 8px;
+  padding: 16px 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 300px;
-  width: 200px;
+  height: 272px;
+  width: 240px;
 }
 .info-content {
   flex-grow: 1;

@@ -17,6 +17,7 @@
           routerLink=""
           routerLinkActive="active-link"
           [routerLinkActiveOptions]="{ exact: true }"
+          [style.font-size]="'18px'"
         >
           Home
         </a>
@@ -25,6 +26,7 @@
           routerLink="{{navItem.linkHref}}"
           routerLinkActive="active-link"
           *ngFor="let navItem of navButtons"
+          [style.font-size]="'18px'"
         >
           {{navItem.buttonText}}
         </a>

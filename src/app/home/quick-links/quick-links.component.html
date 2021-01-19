@@ -1,0 +1,17 @@
+<div class="quick-links">
+  <div *ngFor="let quickLink of quickLinks | keyvalue; index as i" class="quick-link-section">
+    <mat-divider *ngIf="i !== 0" [vertical]="true"></mat-divider>
+    <div class="quick-link-content">
+      <div class="mat-body-strong">{{quickLink.key}}</div>
+      <div *ngFor="let link of quickLink.value">
+        <a class="quick-link" routerLink="{{link.linkHref}}">{{link.linkText}}</a>
+      </div>
+    </div>
+  </div>
+  <mat-divider [vertical]="true"></mat-divider>
+  <div class="quick-link-section quick-link-content">
+    Aloha, My Home is in beta version and currently operating by invite only in the Northern
+    Virginia Area.
+    If you are interested in using our website, please contact us at ____ for more information.
+  </div>
+</div>

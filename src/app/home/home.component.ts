@@ -8,6 +8,7 @@ export interface Info {
     linkHref: string;
   };
   borderColor: CSSStyleDeclaration['borderColor'];
+  backgroundImagePath: string;
 }
 
 @Component({
@@ -20,30 +21,42 @@ export class HomeComponent implements OnInit {
     {
       header: 'I am a Buyer',
       content: [
-        'paragraph 1',
-        'paragraph 2',
+        'Find a lender, make offers, negotiate with sellers, and get to closing - all on one site!',
+        'Save money on a house when sellers don\'t have to pay agent commissions',
       ],
       link: {
         linkText: 'BUY A HOME',
         linkHref: '/buyer',
       },
-      borderColor: 'lightblue'
+      borderColor: '#A4BE59',
+      backgroundImagePath: 'assets/Image1_homepage.jpg',
     },
     {
       header: 'I am a Seller',
       content: [
-        'paragraph 1',
-        'paragraph 2',
+        'Receive and sign offers',
+        'Location professionals such as photographers, stagers, and contractors',
+        'Pay only a small, flat fee at closing',
       ],
-      borderColor: 'lightgreen',
+      link: {
+        linkText: 'SELL A HOME',
+        linkHref: '/seller',
+      },
+      borderColor: '#79EAEF',
+      backgroundImagePath: 'assets/Image2_homepage.jpg',
     },
     {
       header: 'Just Inquiring',
       content: [
-        'paragraph 1',
-        'paragraph 2',
+        'Learn all about the home buying and selling process',
+        'Find out how Aloha My Home can save you money when you are ready to buy or sell',
       ],
-      borderColor: 'lightsalmon',
+      link: {
+        linkText: 'REQUEST INFORMATION',
+        linkHref: '/info',
+      },
+      borderColor: '#E8865C',
+      backgroundImagePath: 'assets/Image3_homepage.jpg',
     }
   ];
 

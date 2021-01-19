@@ -14,9 +14,12 @@
 }
 
 .site-mantra {
-  margin-top: 32px;
-  font-weight: bolder;
-  color: mat-color($mat-blue, 600);
+  margin-top: 48px;
+  color: mat-color($mat-light-blue, 800);
+}
+
+.site-sub-mantra {
+  margin-bottom: 56px;
 }
 
 .main-info-cards {
@@ -27,33 +30,26 @@
   justify-content: center;
 }
 
-.main-quick-compare-content {
+.quick-compare-content {
   position: relative;
-  height: 400px;
   width: 100%;
   &:before {
     content: "";
     position: absolute;
-    top: -100px;
+    top: -60px;
     bottom: -100px;
     left: 0;
     right: 0;
-    transform: skewY(-3deg);
+    transform: skewY(-2deg);
     border-top-style: solid;
-    border-top-width: 4px;
-    border-top-color: $primary;
-    background-color: yellowgreen;
+    border-top-width: 8px;
+    border-top-color: $background-teal;
+    background-color: $background-green;
   }
-}
-
-.quick-compare {
-  position: relative;
-  padding: 80px;
 }
 
 .site-links {
   z-index: 1;
-  height: 300px;
   background-color: mat-color($mat-grey, 50);
   width: 100%;
 }
