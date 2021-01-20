@@ -83,3 +83,15 @@ $background-green: #D8F786;
 $background-teal: #3BB9CE;
 
 $flower: #FDB697;
+
+.buyer-border {
+  border-color: $buyer-stroke;
+}
+
+.seller-border {
+  border-color: $seller-stroke;
+}
+
+.inquiring-border {
+  border-color: $inquiring-stroke;
+}

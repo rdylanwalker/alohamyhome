@@ -7,7 +7,7 @@ export interface Info {
     linkText: string;
     linkHref: string;
   };
-  borderColor: CSSStyleDeclaration['borderColor'];
+  borderClass: CSSStyleDeclaration['borderColor'];
   backgroundImagePath: string;
 }
 
@@ -28,8 +28,8 @@ export class HomeComponent implements OnInit {
         linkText: 'BUY A HOME',
         linkHref: '/buyer',
       },
-      borderColor: '#A4BE59',
-      backgroundImagePath: 'assets/Image1_homepage.jpg',
+      borderClass: 'buyer-border',
+      backgroundImagePath: 'assets/Image1_homepage_progressive.jpg',
     },
     {
       header: 'I am a Seller',
@@ -42,8 +42,8 @@ export class HomeComponent implements OnInit {
         linkText: 'SELL A HOME',
         linkHref: '/seller',
       },
-      borderColor: '#79EAEF',
-      backgroundImagePath: 'assets/Image2_homepage.jpg',
+      borderClass: 'seller-border',
+      backgroundImagePath: 'assets/Image2_homepage_progressive.jpg',
     },
     {
       header: 'Just Inquiring',
@@ -55,8 +55,8 @@ export class HomeComponent implements OnInit {
         linkText: 'REQUEST INFORMATION',
         linkHref: '/info',
       },
-      borderColor: '#E8865C',
-      backgroundImagePath: 'assets/Image3_homepage.jpg',
+      borderClass: 'inquiring-border',
+      backgroundImagePath: 'assets/Image3_homepage_progressive.jpg',
     }
   ];
 

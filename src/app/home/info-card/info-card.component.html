@@ -1,5 +1,5 @@
 <div class="info-card-background" [style.background-image]="'url(' + info.backgroundImagePath + ')'">
-  <div class="info-card-content" [style.border-color]="info.borderColor">
+  <div [class]="'info-card-content ' + info.borderClass">
     <strong class="mat-title">{{info.header}}</strong>
     <div class="info-content paragraph-text">
       <p
