@@ -8,12 +8,7 @@ import { Component } from '@angular/core';
 export class SignInComponent {
   passwordVisible = false;
 
-  stopPropagation(event: MouseEvent): void {
-    event.stopPropagation();
-  }
-
   togglePasswordVisibility(event: MouseEvent): void {
-    this.stopPropagation(event);
     event.preventDefault();
     this.passwordVisible = !this.passwordVisible;
   }

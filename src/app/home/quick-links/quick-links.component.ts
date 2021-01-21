@@ -11,44 +11,58 @@ interface QuickLink {
   styleUrls: ['./quick-links.component.scss']
 })
 export class QuickLinksComponent {
-  quickLinks: { [key: string]: QuickLink[] } = {
-    'Heading 1': [
-      {
-        linkText: 'Link',
-        linkHref: '/link',
-      },
-      {
-        linkText: 'Link',
-        linkHref: '/link',
-      },
-      {
-        linkText: 'Link',
-        linkHref: '/link',
-      },
-      {
-        linkText: 'Link',
-        linkHref: '/link',
-      },
-      {
-        linkText: 'Link',
-        linkHref: '/link',
-      },
-      {
-        linkText: 'Link',
-        linkHref: '/link',
-      }
+  quickLinks: Map<string, QuickLink[]> = new Map([
+    [
+      'Heading 1',
+      [
+        {
+          linkText: 'Link',
+          linkHref: '/link',
+        },
+        {
+          linkText: 'Link',
+          linkHref: '/link',
+        },
+        {
+          linkText: 'Link',
+          linkHref: '/link',
+        },
+        {
+          linkText: 'Link',
+          linkHref: '/link',
+        },
+        {
+          linkText: 'Link',
+          linkHref: '/link',
+        },
+        {
+          linkText: 'Link',
+          linkHref: '/link',
+        }
+      ]
     ],
-    'Heading 2': [
-      {
-        linkText: 'Link',
-        linkHref: '/link',
-      }
+    [
+      'Heading 2',
+      [
+        {
+          linkText: 'Link',
+          linkHref: '/link',
+        }
+      ]
     ],
-    'Heading 3': [
-      {
-        linkText: 'Link',
-        linkHref: '/link',
-      }
+    [
+      'Heading 3',
+      [
+        {
+         linkText: 'Link',
+          linkHref: '/link',
+        }
+      ]
     ],
-  };
+  ]);
 }
+
+
+
+
+

@@ -1,5 +1,6 @@
-import {Component, Input} from '@angular/core';
-import {Info} from '../home.component';
+import { Component, Input } from '@angular/core';
+
+import { Info } from '../home.component';
 
 @Component({
   selector: 'app-info-card',

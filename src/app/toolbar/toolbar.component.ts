@@ -1,5 +1,6 @@
-import {Component, Input, Output, EventEmitter} from '@angular/core';
-import {NavButton} from '../app.component';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+
+import { NavButton } from '../app.component';
 
 @Component({
   selector: 'app-toolbar',
@@ -9,14 +10,13 @@ import {NavButton} from '../app.component';
 export class ToolbarComponent {
   @Input() navButtons: NavButton[];
   @Output() toggleSidenav = new EventEmitter<void>();
-  path: string;
   activeNavButton: number | undefined = undefined;
 
   onNavButtonClick = (index: number): void => {
     this.activeNavButton = index;
-  }
+  };
 
   onCenterButtonMenuClose = () => {
     this.activeNavButton = undefined;
-  }
+  };
 }

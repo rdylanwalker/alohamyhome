@@ -1,4 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { MatDividerModule } from '@angular/material/divider';
+
+import { RouterLinkDirectiveStub } from '../../../testing/router-link-directive-stub';
 
 import { QuickLinksComponent } from './quick-links.component';
 
@@ -8,7 +11,8 @@ describe('QuickLinksComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ QuickLinksComponent ]
+      declarations: [ QuickLinksComponent, RouterLinkDirectiveStub ],
+      imports: [ MatDividerModule ]
     })
     .compileComponents();
   });
