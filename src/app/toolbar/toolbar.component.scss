@@ -17,9 +17,33 @@ button {
 
 .logo-title {
   display: block;
-  height: 48px;
 }
 
 .sign-in-button {
   color: $accent;
+}
+
+@media only screen and (max-width: 1080px) {
+  .hide-lt-1080 {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .hide-gt-1080 {
+    display: none;
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+  .hide-lt-500 {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .hide-gt-500.mat-button {
+    display: none;
+  }
 }

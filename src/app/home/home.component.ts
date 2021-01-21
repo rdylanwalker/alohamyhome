@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 export interface Info {
   header: string;
@@ -16,7 +16,7 @@ export interface Info {
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent {
   info: Info[] = [
     {
       header: 'I am a Buyer',
@@ -59,10 +59,4 @@ export class HomeComponent implements OnInit {
       backgroundImagePath: 'assets/Image3_homepage_progressive.jpg',
     }
   ];
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
 }

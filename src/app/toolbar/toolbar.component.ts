@@ -1,5 +1,4 @@
-import {ChangeDetectorRef, Component, Input, OnDestroy, OnInit, Output, EventEmitter} from '@angular/core';
-import {MediaMatcher} from '@angular/cdk/layout';
+import {Component, Input, Output, EventEmitter} from '@angular/core';
 import {NavButton} from '../app.component';
 
 @Component({
@@ -7,33 +6,17 @@ import {NavButton} from '../app.component';
   templateUrl: './toolbar.component.html',
   styleUrls: ['./toolbar.component.scss']
 })
-export class ToolbarComponent implements OnInit, OnDestroy {
+export class ToolbarComponent {
   @Input() navButtons: NavButton[];
-  @Input() onNavButtonClick: (index: number) => void;
-  @Input() activeNavButton: number | undefined;
-  @Output() activeNavButtonChange = new EventEmitter<undefined>();
   @Output() toggleSidenav = new EventEmitter<void>();
-  mobileQuery: MediaQueryList;
+  path: string;
+  activeNavButton: number | undefined = undefined;
 
-  private readonly mobileQueryListener: () => void;
-
-  constructor(
-    mediaMatcher: MediaMatcher,
-    changeDetectorRef: ChangeDetectorRef,
-  ) {
-    this.mobileQuery = mediaMatcher.matchMedia('(max-width: 1080px)');
-    this.mobileQueryListener = () => changeDetectorRef.detectChanges();
-    this.mobileQuery.addEventListener('change', this.mobileQueryListener);
-  }
-
-  ngOnInit(): void {
-  }
-
-  ngOnDestroy(): void {
-    this.mobileQuery.removeEventListener('change', this.mobileQueryListener);
+  onNavButtonClick = (index: number): void => {
+    this.activeNavButton = index;
   }
 
   onCenterButtonMenuClose = () => {
-    this.activeNavButtonChange.emit(undefined);
+    this.activeNavButton = undefined;
   }
 }

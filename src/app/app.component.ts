@@ -1,8 +1,9 @@
-import {Component} from '@angular/core';
+import { Component } from '@angular/core';
 
 export interface NavButton {
   buttonText: string;
   linkHref: string;
+  class?: string;
 }
 
 @Component({
@@ -26,16 +27,21 @@ export class AppComponent {
     },
     {
       buttonText: 'Vendors & Contractors',
-      linkHref: '/venders',
+      linkHref: '/vendors',
     },
     {
       buttonText: 'FAQ',
       linkHref: '/faq',
-    }
+    },
+    {
+      buttonText: 'Mortgage Calculator',
+      linkHref: '/calculator',
+      class: 'hide-gt-500',
+    },
+    {
+      buttonText: 'Sign In',
+      linkHref: '/signin',
+      class: 'hide-gt-500',
+    },
   ];
-  activeNavButton: number | undefined = undefined;
-
-  onNavButtonClick = (index: number): void => {
-    this.activeNavButton = index;
-  }
 }

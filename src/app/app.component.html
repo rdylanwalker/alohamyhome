@@ -1,8 +1,6 @@
 <div class="content">
   <app-toolbar
     [navButtons]="navButtons"
-    [(activeNavButton)]="activeNavButton"
-    [onNavButtonClick]="onNavButtonClick"
     (toggleSidenav)="sidenav.toggle()"
   >
   </app-toolbar>
@@ -27,6 +25,7 @@
           routerLinkActive="active-link"
           *ngFor="let navItem of navButtons"
           [style.font-size]="'18px'"
+          [class]="navItem.class"
         >
           {{navItem.buttonText}}
         </a>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 interface QuickLink {
   linkText: string;
@@ -10,7 +10,7 @@ interface QuickLink {
   templateUrl: './quick-links.component.html',
   styleUrls: ['./quick-links.component.scss']
 })
-export class QuickLinksComponent implements OnInit {
+export class QuickLinksComponent {
   quickLinks: { [key: string]: QuickLink[] } = {
     'Heading 1': [
       {
@@ -51,10 +51,4 @@ export class QuickLinksComponent implements OnInit {
       }
     ],
   };
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
 }
