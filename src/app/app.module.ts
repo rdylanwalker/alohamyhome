@@ -5,15 +5,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularMaterialModule } from './angular-material.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FooterComponent } from './footer/footer.component';
-import { HomeComponent } from './home/home.component';
-import { InfoCardComponent } from './home/info-card/info-card.component';
-import { QuickCompareComponent } from './home/quick-compare/quick-compare.component';
-import { QuickLinksComponent } from './home/quick-links/quick-links.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { SignInComponent } from './sign-in/sign-in.component';
-import { CenterButtonDropdownComponent } from './toolbar/center-button-dropdown/center-button-dropdown.component';
-import { ToolbarComponent } from './toolbar/toolbar.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { HomeComponent } from './components/home/home.component';
+import { InfoCardComponent } from './components/home/info-card/info-card.component';
+import { QuickCompareComponent } from './components/home/quick-compare/quick-compare.component';
+import { QuickLinksComponent } from './components/home/quick-links/quick-links.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { SignInComponent } from './components/sign-in/sign-in.component';
+import { CenterButtonDropdownComponent } from './components/toolbar/center-button-dropdown/center-button-dropdown.component';
+import { ToolbarComponent } from './components/toolbar/toolbar.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +35,6 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
     AppRoutingModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [ AppComponent ]
 })
 export class AppModule { }

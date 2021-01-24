@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
+import { AuthService } from './services/auth/auth.service';
 
 export interface NavButton {
   buttonText: string;
@@ -9,9 +11,9 @@ export interface NavButton {
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: [ './app.component.scss' ]
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   navButtons: NavButton[] = [
     {
       buttonText: 'Buyer',
@@ -38,10 +40,23 @@ export class AppComponent {
       linkHref: '/calculator',
       class: 'hide-gt-500',
     },
-    {
-      buttonText: 'Sign In',
-      linkHref: '/signin',
-      class: 'hide-gt-500',
-    },
   ];
+
+  constructor(
+    private authService: AuthService
+  ) {
+  }
+
+  ngOnInit() {
+    console.log(this.authService.authEnabled);
+    if (this.authService.authEnabled) {
+      this.navButtons.push(
+        {
+          buttonText: 'Sign In',
+          linkHref: '/signin',
+          class: 'hide-gt-500',
+        },
+      );
+    }
+  }
 }

@@ -1,0 +1,42 @@
+@import '../../../../variables';
+
+$flex-item-width: 200px;
+$flex-item-margin: 24px;
+
+.quick-links {
+  display: flex;
+  margin: $flex-item-margin;
+  flex-wrap: wrap;
+}
+
+.quick-link-section {
+  display: flex;
+  flex: 1 1 $flex-item-width;
+  margin: $flex-item-margin 0;
+}
+
+.quick-link-content {
+  margin: 0 $flex-item-margin;
+  flex-grow: 1;
+}
+
+.quick-link {
+  text-decoration: none;
+  color: $accent;
+}
+
+@media only screen and (max-width: ($flex-item-width * 4 + $flex-item-margin * 2) - 1) {
+  .hide-divider-800 {
+    visibility: hidden;
+  }
+}
+
+@media only screen and (max-width: ($flex-item-width * 3 + $flex-item-margin * 2) - 1) {
+  .hide-divider-600 {
+    visibility: hidden;
+  }
+
+  .quick-links {
+    display: block;
+  }
+}

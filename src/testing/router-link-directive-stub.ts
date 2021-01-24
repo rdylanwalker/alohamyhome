@@ -9,6 +9,7 @@ export { RouterLink } from '@angular/router';
 })
 export class RouterLinkDirectiveStub {
   @Input('routerLink') linkParams: any;
+  @Input('routerLinkActiveOptions') activeRouteOptions: any;
   navigatedTo: any = null;
 
   @HostListener('click')

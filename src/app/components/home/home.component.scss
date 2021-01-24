@@ -1,0 +1,63 @@
+@import '../../../variables';
+
+.main-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.headline {
+  text-align: center;
+  padding: 0 8px;
+}
+
+.site-mantra {
+  margin-top: 48px;
+  color: mat-color($mat-light-blue, 800);
+}
+
+.site-sub-mantra {
+  margin-bottom: 56px;
+}
+
+.main-info-cards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.quick-compare-content {
+  position: relative;
+  width: 100%;
+  &:before {
+    content: "";
+    position: absolute;
+    top: -60px;
+    bottom: -100px;
+    left: 0;
+    right: 0;
+    transform: skewY(-2deg);
+    border-top-style: solid;
+    border-top-width: 8px;
+    border-top-color: $background-teal;
+    background-color: $background-green;
+  }
+}
+
+.site-links {
+  z-index: 1;
+  background-color: mat-color($mat-grey, 50);
+  width: 100%;
+}
+
+.site-flower {
+  position: absolute;
+  top: -150px;
+  right: -50px;
+  filter: invert(1);
+  opacity: 0.3;
+}
