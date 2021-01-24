@@ -3,10 +3,10 @@
 @include mat-core();
 
 $custom-typography: mat-typography-config(
-  $headline: mat-typography-level(36px, 48px, 800, 'Avenir Next Condensed'),
-  $subheading-2: mat-typography-level(28px, 36px, 800, 'Avenir Next Condensed'),
-  $subheading-1: mat-typography-level(24px, 30px, 400, 'Avenir Next Condensed'),
-  $title: mat-typography-level(26px, 32px, 800, 'Avenir Next Condensed')
+  $headline: mat-typography-level(36px, 48px, 800),
+  $subheading-2: mat-typography-level(28px, 36px, 800),
+  $subheading-1: mat-typography-level(24px, 30px, 400),
+  $title: mat-typography-level(26px, 32px, 800)
 );
 
 @include angular-material-typography($custom-typography);

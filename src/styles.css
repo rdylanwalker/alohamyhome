@@ -12,12 +12,10 @@ body {
 .paragraph-text {
   font-size: 16px;
   font-weight: 600;
-  font-family: Avenir Next, serif;
 }
 
 .heading-2b {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 200;
-  font-family: Avenir Next, serif;
   color: lightgray;
 }

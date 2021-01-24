@@ -53,3 +53,11 @@
   background-color: mat-color($mat-grey, 50);
   width: 100%;
 }
+
+.site-flower {
+  position: absolute;
+  top: -150px;
+  right: -50px;
+  filter: invert(1);
+  opacity: 0.3;
+}
