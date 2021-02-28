@@ -8,7 +8,7 @@ import { HomeComponent, Info } from './home.component';
   template: '',
 })
 class InfoCardStubComponent {
-  @Input() info: Info;
+  @Input() info?: Info;
 }
 
 @Component({

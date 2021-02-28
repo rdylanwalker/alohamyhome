@@ -16,7 +16,7 @@ import { AuthService } from './services/auth/auth.service';
   template: '',
 })
 class ToolbarStubComponent {
-  @Input() navButtons: NavButton[];
+  @Input() navButtons: NavButton[] = [];
 }
 
 @Component({

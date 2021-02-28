@@ -11,7 +11,7 @@ describe('workspace-project App', () => {
 
   it('should display toolbar', async () => {
     await page.navigateTo();
-    expect(await page.getToolbar()).toBeTruthy();
+    expect(page.getToolbar()).toBeTruthy();
   });
 
   afterEach(async () => {

@@ -9,7 +9,7 @@ import { AuthService } from '../../services/auth/auth.service';
   styleUrls: [ './toolbar.component.scss' ]
 })
 export class ToolbarComponent {
-  @Input() navButtons: NavButton[];
+  @Input() navButtons: NavButton[] = [];
   @Output() toggleSidenav = new EventEmitter<void>();
   activeNavButton: number | undefined = undefined;
 

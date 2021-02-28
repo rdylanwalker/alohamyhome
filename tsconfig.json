@@ -12,10 +12,19 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "es2020",
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
     "lib": [
       "es2018",
       "dom"
     ],
     "resolveJsonModule": true
+  },
+  "angularCompilerOptions": {
+    "strictTemplates": true,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true
   }
 }

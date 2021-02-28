@@ -8,5 +8,5 @@ import { Info } from '../home.component';
   styleUrls: [ './info-card.component.scss' ]
 })
 export class InfoCardComponent {
-  @Input() info: Info;
+  @Input() info?: Info;
 }

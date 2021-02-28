@@ -1,11 +1,11 @@
-import { browser, by, element } from 'protractor';
+import { browser, by, element, ElementFinder } from 'protractor';
 
 export class AppPage {
   async navigateTo(): Promise<unknown> {
     return browser.get(browser.baseUrl);
   }
 
-  async getToolbar(): Promise<string> {
+  getToolbar(): ElementFinder {
     return element(by.css('.toolbar'));
   }
 }
