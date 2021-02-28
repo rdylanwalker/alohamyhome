@@ -54,6 +54,10 @@
             "newlines-between": "always"
           }
         ],
+        "no-alert": "error",
+        "no-console": "error",
+        "no-debugger": "error",
+        "no-param-reassign": "error",
         "object-curly-spacing": ["error", "always"]
       }
     },
