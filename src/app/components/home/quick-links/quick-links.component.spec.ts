@@ -13,8 +13,7 @@ describe('QuickLinksComponent', () => {
     await TestBed.configureTestingModule({
       declarations: [ QuickLinksComponent, RouterLinkDirectiveStub ],
       imports: [ MatDividerModule ]
-    })
-    .compileComponents();
+    }).compileComponents();
   });
 
   beforeEach(() => {

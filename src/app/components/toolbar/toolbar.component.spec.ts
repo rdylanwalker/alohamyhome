@@ -23,8 +23,7 @@ describe('AppToolbarComponent', () => {
     await TestBed.configureTestingModule({
       declarations: [ ToolbarComponent, CenterButtonDropdownStubComponent, RouterLinkDirectiveStub ],
       imports: [ MatMenuModule, MatToolbarModule, MatButtonModule, MatIconModule ]
-    })
-    .compileComponents();
+    }).compileComponents();
     fixture = TestBed.createComponent(ToolbarComponent);
   });
 

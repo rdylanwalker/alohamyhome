@@ -54,7 +54,7 @@ export class QuickLinksComponent {
       'Heading 3',
       [
         {
-         linkText: 'Link',
+          linkText: 'Link',
           linkHref: '/link',
         }
       ]

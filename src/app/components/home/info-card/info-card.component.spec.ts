@@ -11,8 +11,7 @@ describe('InfoCardComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [ InfoCardComponent, RouterLinkDirectiveStub ],
-    })
-    .compileComponents();
+    }).compileComponents();
   });
 
   beforeEach(() => {

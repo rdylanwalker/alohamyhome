@@ -11,8 +11,7 @@ describe('AppFooterComponent', () => {
     await TestBed.configureTestingModule({
       declarations: [ FooterComponent ],
       imports: [ MatDividerModule ]
-    })
-    .compileComponents();
+    }).compileComponents();
   });
 
   beforeEach(() => {

@@ -1,4 +1,3 @@
-import { HarnessLoader } from '@angular/cdk/testing';
 import { TestbedHarnessEnvironment } from '@angular/cdk/testing/testbed';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { MatButtonModule } from '@angular/material/button';
@@ -11,16 +10,14 @@ import { SignInComponent } from './sign-in.component';
 describe('SignInMenuComponent', () => {
   let component: SignInComponent;
   let fixture: ComponentFixture<SignInComponent>;
-  let loader: HarnessLoader;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [ SignInComponent ],
       imports: [ MatButtonModule, MatIconModule, MatInputModule, BrowserAnimationsModule ]
-    })
-    .compileComponents();
+    }).compileComponents();
     fixture = TestBed.createComponent(SignInComponent);
-    loader = TestbedHarnessEnvironment.loader(fixture);
+    TestbedHarnessEnvironment.loader(fixture);
   });
 
   beforeEach(() => {

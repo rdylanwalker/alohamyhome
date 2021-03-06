@@ -21,7 +21,7 @@ export class ToolbarComponent {
     this.activeNavButton = index;
   };
 
-  onCenterButtonMenuClose = () => {
+  onCenterButtonMenuClose = (): void => {
     this.activeNavButton = undefined;
   };
 }

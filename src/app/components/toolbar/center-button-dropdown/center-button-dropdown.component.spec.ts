@@ -9,8 +9,7 @@ describe('CenterButtonDropdownComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [ CenterButtonDropdownComponent ]
-    })
-    .compileComponents();
+    }).compileComponents();
   });
 
   beforeEach(() => {
